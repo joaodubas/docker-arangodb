@@ -17,7 +17,7 @@ RUN echo "deb $ARANGO_URL/ /" >> /etc/apt/sources.list.d/arangodb.list \
 
 # install arangodb
 RUN apt-get -y -qq --force-yes update \
-    && apt-get -y -qq --force-yes install arangodb=2.2.2
+    && apt-get -y -qq --force-yes install arangodb=2.2.5
 
 # cleanup
 RUN apt-get -y -qq --force-yes clean \
